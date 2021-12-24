@@ -1,6 +1,6 @@
 package com.github.metallnt.configinclude.configs;
 
-import com.github.metallnt.configinclude.ConfigInclude;
+import com.github.metallnt.configinclude.CleanUp;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
  */
 public class ConfigUpdater {
 
-    public static void update(ConfigInclude plugin, String resourceName, File toUpdate, List<String> ignoredSections) throws IOException {
+    public static void update(CleanUp plugin, String resourceName, File toUpdate, List<String> ignoredSections) throws IOException {
         BufferedReader newReader = new BufferedReader(new InputStreamReader(Objects.requireNonNull(plugin.getResource(resourceName)), StandardCharsets.UTF_8));
         List<String> newLines = newReader.lines().collect(Collectors.toList());
         newReader.close();

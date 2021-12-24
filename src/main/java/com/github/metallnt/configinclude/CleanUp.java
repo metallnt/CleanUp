@@ -3,13 +3,13 @@ package com.github.metallnt.configinclude;
 import com.github.metallnt.configinclude.configs.DefaultConfig;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ConfigInclude extends JavaPlugin {
+public final class CleanUp extends JavaPlugin {
 
-    private static ConfigInclude plugin;
+    private static CleanUp plugin;
 
     private DefaultConfig defaultConfig;
 
-    public static ConfigInclude getInstance() {
+    public static CleanUp getInstance() {
         return plugin;
     }
 

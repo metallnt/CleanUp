@@ -1,6 +1,6 @@
 package com.github.metallnt.configinclude.configs;
 
-import com.github.metallnt.configinclude.ConfigInclude;
+import com.github.metallnt.configinclude.CleanUp;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,9 +17,9 @@ public class DefaultConfig extends AbstractConfig {
 
     private final String fileName = "config.yml";
 
-    public DefaultConfig(final ConfigInclude configInclude) {
+    public DefaultConfig(final CleanUp cleanUp) {
         this.setFileName(fileName);
-        this.setPlugin(configInclude);
+        this.setPlugin(cleanUp);
     }
 
     // Обновление конфига с новыми настройками

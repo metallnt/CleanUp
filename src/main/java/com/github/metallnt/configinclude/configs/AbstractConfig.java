@@ -1,6 +1,6 @@
 package com.github.metallnt.configinclude.configs;
 
-import com.github.metallnt.configinclude.ConfigInclude;
+import com.github.metallnt.configinclude.CleanUp;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 
@@ -14,7 +14,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 public class AbstractConfig {
 
     private YamlConfig yamlConfig;
-    private ConfigInclude plugin;
+    private CleanUp plugin;
     private String fileName;
     private boolean isLoaded = false;
 
@@ -74,11 +74,11 @@ public class AbstractConfig {
         this.fileName = fileName;
     }
 
-    public ConfigInclude getPlugin() {
+    public CleanUp getPlugin() {
         return plugin;
     }
 
-    public void setPlugin(ConfigInclude plugin) {
+    public void setPlugin(CleanUp plugin) {
         this.plugin = plugin;
     }
 }

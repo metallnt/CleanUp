@@ -1,6 +1,6 @@
 package com.github.metallnt.configinclude.configs;
 
-import com.github.metallnt.configinclude.ConfigInclude;
+import com.github.metallnt.configinclude.CleanUp;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -19,16 +19,16 @@ public class YamlConfig extends YamlConfiguration {
     File file;
 
     // Создаем новый файл YAML
-    public YamlConfig(final ConfigInclude configInclude, final String fileName, final String name) throws InvalidConfigurationException {
-        final String folderPath = configInclude.getDataFolder().getAbsolutePath() + File.separator;
+    public YamlConfig(final CleanUp cleanUp, final String fileName, final String name) throws InvalidConfigurationException {
+        final String folderPath = cleanUp.getDataFolder().getAbsolutePath() + File.separator;
         file = new File(folderPath + fileName);
 
         // Если файл не существует
         if (!file.exists()) {
             // Если ресурс файла существует
-            if (configInclude.getResource(fileName) != null) {
+            if (cleanUp.getResource(fileName) != null) {
                 // Сохраняем конфиг из ресурсов (копированием)
-                configInclude.saveResource(fileName, false);
+                cleanUp.saveResource(fileName, false);
                 // И загружаем файл
                 try {
                     this.load(file);
@@ -65,7 +65,7 @@ public class YamlConfig extends YamlConfiguration {
         try {
             // Если файл пустой
             if (file == null) {
-                ConfigInclude.getInstance().getServer().getConsoleSender().sendMessage("Невозможно сохранить файл, т.к. он пустой");
+                CleanUp.getInstance().getServer().getConsoleSender().sendMessage("Невозможно сохранить файл, т.к. он пустой");
                 return;
             }
             this.save(file);

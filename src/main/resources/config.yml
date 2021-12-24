@@ -1,8 +1,30 @@
-# # # # # # # # # #
-#                 #
-#   CONFIG FILE   #
-#                 #
-# # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # #
+#                                     #
+#            CONFIG FILE              #
+#                                     #
+# # # # # # # # # # # # # # # # # # # #
 
 update_config: true
-new_value: false
+
+# Removing Deleted Plugin Folders
+delete_dirs:
+  enable: true
+#  How long do files stay unchanged in days
+  period_days: 60
+
+# Removing user data in plugins
+purge_data:
+  enable: true
+#  Data obsolescence time in months
+  period_month: 12
+
+# Clear Databases
+database:
+  enable: true
+  period_month_non_plugin: 24
+  period_month_with_plugin: 24
+  type_database: mysql
+
+protection_players: []
+
+protection_plugins: []

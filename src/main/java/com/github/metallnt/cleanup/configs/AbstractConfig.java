@@ -1,11 +1,11 @@
-package com.github.metallnt.configinclude.configs;
+package com.github.metallnt.cleanup.configs;
 
-import com.github.metallnt.configinclude.CleanUp;
+import com.github.metallnt.cleanup.CleanUp;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 
 /**
- * Class com.github.metallnt.configinclude.configs
+ * Class com.github.metallnt.cleanup.configs
  * <p>
  * Date: 19.12.2021 15:44 19 12 2021
  *
@@ -21,7 +21,6 @@ public class AbstractConfig {
     // Создаем новый файл конфига
     public void createNewFile() throws InvalidConfigurationException {
         yamlConfig = new YamlConfig(plugin, fileName, fileName);
-        plugin.getServer().getConsoleSender().sendMessage("Загружен файл " + fileName);
     }
 
     // Получаем файл конфига

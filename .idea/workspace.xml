@@ -4,14 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e25bc40b-e255-44b3-a0a6-0a02ac1e3621" name="Changes" comment="Start 2">
+    <list default="true" id="e25bc40b-e255-44b3-a0a6-0a02ac1e3621" name="Changes" comment="add &quot;get&quot; in config">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/actions/ClearDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/actions/DeleteDirs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/actions/PurgeData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/metallnt/configinclude/CleanUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/CleanUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/metallnt/configinclude/configs/AbstractConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/configs/AbstractConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/metallnt/configinclude/configs/ConfigUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/configs/ConfigUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/metallnt/configinclude/configs/DefaultConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/configs/DefaultConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/metallnt/configinclude/configs/YamlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/metallnt/cleanup/configs/YamlConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -20,14 +37,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="downloadDocsAutomatically" value="true" />
-        <option name="downloadSourcesAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="22jZsYyzKwJUZWTxGG5SRpPFmP5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -142,6 +151,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />

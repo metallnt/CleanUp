@@ -1,6 +1,6 @@
-package com.github.metallnt.configinclude.configs;
+package com.github.metallnt.cleanup.configs;
 
-import com.github.metallnt.configinclude.CleanUp;
+import com.github.metallnt.cleanup.CleanUp;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ConcurrentModificationException;
 
 /**
- * Class com.github.metallnt.configinclude.configs
+ * Class com.github.metallnt.cleanup.configs
  * <p>
  * Date: 19.12.2021 15:45 19 12 2021
  *
@@ -65,7 +65,7 @@ public class YamlConfig extends YamlConfiguration {
         try {
             // Если файл пустой
             if (file == null) {
-                CleanUp.getInstance().getServer().getConsoleSender().sendMessage("Невозможно сохранить файл, т.к. он пустой");
+                CleanUp.log.severe("Невозможно сохранить файл, т.к. он пустой");
                 return;
             }
             this.save(file);

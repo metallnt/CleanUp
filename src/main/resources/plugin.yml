@@ -1,6 +1,6 @@
 name: CleanUp
 version: '${project.version}'
-main: com.github.metallnt.configinclude.CleanUp
+main: com.github.metallnt.cleanup.CleanUp
 api-version: 1.16
 description: 'Пример реализации конфига'
 author: Metall

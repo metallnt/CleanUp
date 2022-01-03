@@ -28,3 +28,8 @@ database:
 protection_players: []
 
 protection_plugins: []
+
+protection_folders:
+  - update
+  - Updater
+  - bStats

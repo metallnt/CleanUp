@@ -1,6 +1,6 @@
-package com.github.metallnt.configinclude.configs;
+package com.github.metallnt.cleanup.configs;
 
-import com.github.metallnt.configinclude.CleanUp;
+import com.github.metallnt.cleanup.CleanUp;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -13,7 +13,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Class com.github.metallnt.configinclude.configs
+ * Class com.github.metallnt.cleanup.configs
  * <p>
  * Date: 19.12.2021 15:45 19 12 2021
  *

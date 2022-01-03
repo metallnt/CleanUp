@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.metallnt</groupId>
-    <artifactId>ConfigInclude</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>CleanUp</artifactId>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>ConfigInclude</name>
+    <name>CleanUp</name>
 
     <properties>
         <java.version>1.8</java.version>

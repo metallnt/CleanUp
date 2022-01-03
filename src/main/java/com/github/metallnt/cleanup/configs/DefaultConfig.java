@@ -1,6 +1,6 @@
-package com.github.metallnt.configinclude.configs;
+package com.github.metallnt.cleanup.configs;
 
-import com.github.metallnt.configinclude.CleanUp;
+import com.github.metallnt.cleanup.CleanUp;
 
 import java.awt.*;
 import java.io.File;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Collections;
 
 /**
- * Class com.github.metallnt.configinclude.configs
+ * Class com.github.metallnt.cleanup.configs
  * <p>
  * Date: 19.12.2021 15:44 19 12 2021
  *
@@ -85,5 +85,9 @@ public class DefaultConfig extends AbstractConfig {
 
     public List getProtectionPlugins() {
         return (List) this.getConfig().getStringList("protection_plugins");
+    }
+
+    public List getProtectionFolders() {
+        return (List) this.getConfig().getStringList("protection_folders");
     }
 }
